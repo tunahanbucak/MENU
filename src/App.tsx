@@ -1,11 +1,11 @@
 import { Box } from "@mui/material";
-import LoginPage from "./pages/LoginPage";
 import Header from "./components/Header";
+import Home from "./components/Home";
 
 function App() {
   return (
     <>
-      <Header />
+      <Home />
     </>
   );
 }
