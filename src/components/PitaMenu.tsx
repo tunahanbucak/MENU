@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import { pancake, pita } from "../utils/data";
 import { Box } from "@mui/material";
 import Modal from "@mui/material/Modal";
+import CartButton from "./common/CartButton";
 
 interface CardItem {
   title: string;
@@ -13,18 +14,14 @@ interface CardItem {
   price: string;
   image: string;
 }
-
 export default function PitaMenu() {
   const [selectedItem, setSelectedItem] = useState<CardItem | null>(null);
-
   const handleCardClick = (item: CardItem) => {
     setSelectedItem(item);
   };
-
   const handleCloseDetail = () => {
     setSelectedItem(null);
   };
-
   return (
     <Box>
       <Typography
@@ -146,6 +143,7 @@ export default function PitaMenu() {
               >
                 {selectedItem.price}
               </Typography>
+              <CartButton />
             </CardContent>
           </Card>
         </Modal>

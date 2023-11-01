@@ -4,8 +4,9 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { breakfast } from "../utils/data";
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import Modal from "@mui/material/Modal";
+import CartButton from "./common/CartButton";
 
 interface CardItem {
   title: string;
@@ -146,6 +147,7 @@ export default function BreakfastMenu() {
               >
                 {selectedItem.price}
               </Typography>
+              <CartButton />
             </CardContent>
           </Card>
         </Modal>
