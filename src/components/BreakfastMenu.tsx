@@ -7,6 +7,7 @@ import { breakfast } from "../utils/data";
 import { Box, Button } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import CartButton from "./common/CartButton";
+import PriceButton from "./common/PriceButton";
 
 interface CardItem {
   title: string;
@@ -37,7 +38,7 @@ export default function BreakfastMenu() {
           fontSize: "20px",
         }}
       >
-        KAHVALTILAR
+        KAHVALTILAR{" "}
       </Typography>
       {breakfast.map((item, index) => (
         <Card
@@ -147,6 +148,8 @@ export default function BreakfastMenu() {
               >
                 {selectedItem.price}
               </Typography>
+              <PriceButton initialPrice={300} />
+
               <CartButton />
             </CardContent>
           </Card>

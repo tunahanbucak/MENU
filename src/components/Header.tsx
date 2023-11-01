@@ -39,7 +39,11 @@ export default function Header() {
     }
   };
   return (
-    <Box>
+    <Box
+      sx={{
+        maxWidth: 600,
+      }}
+    >
       <Box
         sx={{
           justifyContent: "center",
@@ -49,7 +53,13 @@ export default function Header() {
         }}
       >
         <Typography
-          sx={{ mb: 2, fontSize: "24px", fontWeight: "bold", color: "white" }}
+          sx={{
+            mb: 2,
+            fontSize: "24px",
+            fontWeight: "bold",
+            color: "white",
+            background: "gray",
+          }}
         >
           İSTANBUL ÜMRANİYE
         </Typography>
@@ -91,6 +101,8 @@ export default function Header() {
               <img
                 style={{
                   height: 75,
+                  width: 115,
+                  borderRadius: "5px",
                 }}
                 src="https://cdn1.ntv.com.tr/gorsel/1qX9VXyltkuPdCX9_mUjww.jpg?width=952&height=540&mode=both&scale=both"
                 alt="Kahvaltı"
@@ -107,7 +119,8 @@ export default function Header() {
               <img
                 style={{
                   height: 75,
-                  width: "100%",
+                  borderRadius: "5px",
+                  width: 115,
                 }}
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrYth1Qv5ki3eNNgwB_88AlEFFvouKeN-qEQ&usqp=CAU"
                 alt="Gozleme"
@@ -123,6 +136,8 @@ export default function Header() {
               <img
                 style={{
                   height: 75,
+                  borderRadius: "5px",
+                  width: 115,
                 }}
                 src="https://i4.hurimg.com/i/hurriyet/75/750x422/618927c84e3fe10c08ab1591.jpg"
                 alt="Pide"
@@ -138,6 +153,8 @@ export default function Header() {
               <img
                 style={{
                   height: 75,
+                  width: 115,
+                  borderRadius: "5px",
                 }}
                 src="https://cdn.yemek.com/mnresize/1250/833/uploads/2022/03/ev-usulu-pizza-yemekcom.jpg"
                 alt="Pizza"
@@ -153,6 +170,8 @@ export default function Header() {
               <img
                 style={{
                   height: 75,
+                  width: 115,
+                  borderRadius: "5px",
                 }}
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDsIkw3wEXlgU2GGHhYwjyBEi62AdqCMhQQ&usqp=CAU"
                 alt="Doner"
@@ -167,7 +186,9 @@ export default function Header() {
             icon={
               <img
                 style={{
+                  width: 115,
                   height: 75,
+                  borderRadius: "5px",
                 }}
                 src="https://cdn.yemek.com/mnresize/940/940/uploads/2020/04/lahmacun-yeni-one-cikan.jpg"
                 alt="Lahmacun"
@@ -184,6 +205,8 @@ export default function Header() {
               <img
                 style={{
                   height: 75,
+                  width: 115,
+                  borderRadius: "5px",
                 }}
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl64LIFwFva_fNmaeQJpLv7glkn875VPN9VA&usqp=CAU"
                 alt="Tatli"
@@ -199,6 +222,8 @@ export default function Header() {
               <img
                 style={{
                   height: 75,
+                  width: 115,
+                  borderRadius: "5px",
                 }}
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRywib5PVjiFSAdSU3rXWZg7QSlvboDtB3Mx0o_Ih2smpUDB_y0N1XZzIaQ48-7_B9FeRQ&usqp=CAU"
                 alt="Sicak Icecek"
@@ -214,6 +239,8 @@ export default function Header() {
               <img
                 style={{
                   height: 75,
+                  width: 115,
+                  borderRadius: "5px",
                 }}
                 src="https://blog.ciceksepeti.com/wp-content/uploads/2021/03/Limonata.png"
                 alt="Soguk Icecek"
