@@ -6,8 +6,8 @@ import Typography from "@mui/material/Typography";
 import { breakfast } from "../utils/data";
 import { Box, Button } from "@mui/material";
 import Modal from "@mui/material/Modal";
-import CartButton from "./common/CartButton";
 import PriceButton from "./common/PriceButton";
+import ShoppingButton from "./common/ShoppingButton";
 
 interface CardItem {
   title: string;
@@ -18,11 +18,9 @@ interface CardItem {
 
 export default function BreakfastMenu() {
   const [selectedItem, setSelectedItem] = useState<CardItem | null>(null);
-
   const handleCardClick = (item: CardItem) => {
     setSelectedItem(item);
   };
-
   const handleCloseDetail = () => {
     setSelectedItem(null);
   };
@@ -36,6 +34,7 @@ export default function BreakfastMenu() {
           alignItems: "center",
           textAlign: "center",
           fontSize: "20px",
+          fontWeight: "bold",
         }}
       >
         KAHVALTILAR{" "}
@@ -148,9 +147,10 @@ export default function BreakfastMenu() {
               >
                 {selectedItem.price}
               </Typography>
-              <PriceButton initialPrice={300} />
-
-              <CartButton />
+              <PriceButton
+                initialPrice={parseFloat(selectedItem.price.slice(1))}
+              />
+              <ShoppingButton />
             </CardContent>
           </Card>
         </Modal>

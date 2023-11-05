@@ -6,7 +6,8 @@ import Typography from "@mui/material/Typography";
 import { coldBeverage } from "../utils/data";
 import { Box } from "@mui/material";
 import Modal from "@mui/material/Modal";
-import CartButton from "./common/CartButton";
+import PriceButton from "./common/PriceButton";
+import ShoppingButton from "./common/ShoppingButton";
 
 interface CardItem {
   title: string;
@@ -32,6 +33,7 @@ export default function ColdBeverageMenu() {
           alignItems: "center",
           textAlign: "center",
           fontSize: "20px",
+          fontWeight: "bold",
         }}
       >
         SOĞUK İÇECEKLER
@@ -144,7 +146,10 @@ export default function ColdBeverageMenu() {
               >
                 {selectedItem.price}
               </Typography>
-              <CartButton />
+              <PriceButton
+                initialPrice={parseFloat(selectedItem.price.slice(1))}
+              />
+              <ShoppingButton />
             </CardContent>
           </Card>
         </Modal>

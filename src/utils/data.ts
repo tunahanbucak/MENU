@@ -461,7 +461,7 @@ export const breakfast = [
     content: "",
     price: "₺100",
     image:
-      "https://static.ticimax.cloud/9247/uploads/urunresimleri/buyuk/sade-omlet-3e62.jpg",
+      "https://cdn.yemek.com/mnresize/940/940/uploads/2015/05/omlet-yemekcom.jpg",
   },
   {
     title: " Beyaz Peynirli Omlet ",

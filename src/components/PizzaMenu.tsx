@@ -3,10 +3,11 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { breakfast, pizza } from "../utils/data";
+import { pizza } from "../utils/data";
 import { Box } from "@mui/material";
 import Modal from "@mui/material/Modal";
-import CartButton from "./common/CartButton";
+import PriceButton from "./common/PriceButton";
+import ShoppingButton from "./common/ShoppingButton";
 
 interface CardItem {
   title: string;
@@ -26,6 +27,7 @@ export default function PizzaMenu() {
     <Box>
       <Typography
         sx={{
+          fontWeight: "bold",
           color: "white",
           justifyContent: "center",
           alignItems: "center",
@@ -143,7 +145,10 @@ export default function PizzaMenu() {
               >
                 {selectedItem.price}
               </Typography>
-              <CartButton />
+              <PriceButton
+                initialPrice={parseFloat(selectedItem.price.slice(1))}
+              />
+              <ShoppingButton />
             </CardContent>
           </Card>
         </Modal>

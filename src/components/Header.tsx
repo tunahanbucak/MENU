@@ -12,6 +12,7 @@ import LahmacunMenu from "./LahmacunMenu";
 import DessertMenu from "./DessertMenu";
 import HotBeverageMenu from "./HotBeverageMenu";
 import ColdBeverageMenu from "./ColdBeverageMenu";
+import CartButton from "./CartButton";
 
 export default function Header() {
   const [value, setValue] = useState(0);
@@ -39,11 +40,7 @@ export default function Header() {
     }
   };
   return (
-    <Box
-      sx={{
-        maxWidth: 600,
-      }}
-    >
+    <Box sx={{}}>
       <Box
         sx={{
           justifyContent: "center",
@@ -58,7 +55,6 @@ export default function Header() {
             fontSize: "24px",
             fontWeight: "bold",
             color: "white",
-            background: "gray",
           }}
         >
           İSTANBUL ÜMRANİYE
@@ -76,6 +72,7 @@ export default function Header() {
         <Typography sx={{ fontSize: "15px", color: "white" }}>
           Eşsiz Lezzetler Dünyasına Hoş Geldiniz
           <RestaurantIcon sx={{ ml: 1, fontSize: "20px" }} />
+          <CartButton itemCount={2} />
         </Typography>
       </Box>
       <Box
@@ -261,7 +258,7 @@ export default function Header() {
           alignItems: "center",
         }}
       >
-        <Grid container spacing={2} sx={{ marginTop: "2rem" }}>
+        <Grid container spacing={2} sx={{ marginTop: "2rem", ml: 1.6 }}>
           <Grid item xs={12} sm={12}>
             {value === 0 && <BreakfastMenu />}
             {value === 1 && <PancakeMenu />}

@@ -6,7 +6,8 @@ import Typography from "@mui/material/Typography";
 import { hotBeverage } from "../utils/data";
 import { Box, Button } from "@mui/material";
 import Modal from "@mui/material/Modal";
-import CartButton from "./common/CartButton";
+import PriceButton from "./common/PriceButton";
+import ShoppingButton from "./common/ShoppingButton";
 
 interface CardItem {
   title: string;
@@ -27,6 +28,7 @@ export default function HotBeverageMenu() {
     <Box>
       <Typography
         sx={{
+          fontWeight: "bold",
           color: "white",
           justifyContent: "center",
           alignItems: "center",
@@ -144,7 +146,10 @@ export default function HotBeverageMenu() {
               >
                 {selectedItem.price}
               </Typography>
-              <CartButton />
+              <PriceButton
+                initialPrice={parseFloat(selectedItem.price.slice(1))}
+              />
+              <ShoppingButton />
             </CardContent>
           </Card>
         </Modal>

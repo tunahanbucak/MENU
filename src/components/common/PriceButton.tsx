@@ -1,14 +1,5 @@
-import React, { useState } from "react";
-import {
-  Box,
-  Button,
-  ButtonGroup,
-  IconButton,
-  Rating,
-  Typography,
-  styled,
-  useTheme,
-} from "@mui/material";
+import { useState } from "react";
+import { Box, ButtonGroup, IconButton, Typography } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 
@@ -38,7 +29,6 @@ export default function PriceButton({ initialPrice }: ButtonProps) {
           justifyContent: "center",
           alignItems: "center",
           border: "none",
-          // backgroundColor: theme.palette.primary.main,
           color: "#fff",
         }}
       >
@@ -68,7 +58,6 @@ export default function PriceButton({ initialPrice }: ButtonProps) {
         sx={{
           mt: 2,
           mb: 1,
-          // backgroundColor: theme.palette.primary.main,
           display: "inline-block",
           padding: "9px 20px",
           color: "#fff",

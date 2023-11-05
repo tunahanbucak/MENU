@@ -6,9 +6,8 @@ export default function Logo() {
     <Box
       sx={{
         position: "sticky",
-
-        width: "100%",
-        height: "100%",
+        top: "0",
+        bottom: "0",
       }}
     >
       <Box
