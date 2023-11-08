@@ -22,7 +22,7 @@ export default function MenuTabs({
         display: "flex",
       }}
     >
-      <IconButton onClick={handleScrollLeft} sx={{ color: "white" }}>
+      <IconButton onClick={handleScrollLeft} sx={{ color: "#add8e6" }}>
         <KeyboardArrowLeftIcon />
       </IconButton>
       <Tabs
@@ -185,7 +185,7 @@ export default function MenuTabs({
           }
         />
       </Tabs>
-      <IconButton onClick={handleScrollRight} sx={{ color: "white" }}>
+      <IconButton onClick={handleScrollRight} sx={{ color: "#add8e6" }}>
         <KeyboardArrowRightIcon />
       </IconButton>
     </Box>
