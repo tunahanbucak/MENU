@@ -6,7 +6,6 @@ import RemoveIcon from "@mui/icons-material/Remove";
 interface ButtonProps {
   initialPrice: number;
 }
-
 export default function PriceButton({ initialPrice }: ButtonProps) {
   const [quantity, setQuantity] = useState(0);
   const [price, setPrice] = useState(0);

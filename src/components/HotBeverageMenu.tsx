@@ -15,7 +15,6 @@ interface CardItem {
   price: string;
   image: string;
 }
-
 export default function HotBeverageMenu() {
   const [selectedItem, setSelectedItem] = useState<CardItem | null>(null);
   const handleCardClick = (item: CardItem) => {

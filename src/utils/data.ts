@@ -71,8 +71,7 @@ export const pita = [
     title: "Sucuklu Kaşarlı Pide",
     content: "",
     price: "₺200",
-    image:
-      "https://menu.myqrcodemenu.com/files/products/6c6e014a-34e1-4490-8b7e-745adb2fc55538961855-bc50-4be5-b182-c2a1e93ab913.jpg",
+    image: "https://i.ytimg.com/vi/NdYPdulhkFE/maxresdefault.jpg",
   },
 ];
 
@@ -219,14 +218,14 @@ export const dessert = [
     content: "",
     price: "₺200",
     image:
-      "https://www.yasarusta.com/image/cache/catalog/Konsept_Yeni_Cekim_Gorselleri-Nisan/soguk-baklava-2-800x800.png",
+      "https://www.baklavacifuatusta.com.tr/wp-content/uploads/2017/07/soguk-baklava-fuat-usta.jpg",
   },
   {
     title: "Cevizli Baklava",
     content: "",
     price: "₺200",
     image:
-      "https://static.ticimax.cloud/46795/uploads/urunresimleri/buyuk/cevizli-baklava-afe-93.jpg",
+      "https://www.gulluoglukubban.com/templates/restaurant/upload/images/products/1600x1333/cevizlibaklava.jpg",
   },
   {
     title: "Fıstıklı Baklava",
@@ -240,7 +239,7 @@ export const dessert = [
     content: "",
     price: "₺200",
     image:
-      "https://static.ticimax.cloud/54612/uploads/urunresimleri/buyuk/fistikli-tel-kadayif-e-9f83.jpg",
+      "https://www.mutfagimdantarifler.com/wp-content/uploads/2019/05/fistikli-kadayif.jpg",
   },
   {
     title: "Fıstıklı Burma Kadayıf",
@@ -265,13 +264,6 @@ export const hotBeverage = [
     price: "₺15",
     image:
       "https://i.lezzet.com.tr/images-xxlarge-secondary/cayin-tarihcesi-ve-turkiyeye-gelisi-c812539d-a158-4205-b031-724dd2fe3530",
-  },
-  {
-    title: "Sıcak Süt",
-    content: "",
-    price: "₺20",
-    image:
-      "https://www.tasocakfirin.com/image/cache/catalog/products_2021/S%C4%B1cak-S%C3%BCt-500x500.jpg",
   },
   {
     title: "Ihlamur",
@@ -304,11 +296,18 @@ export const hotBeverage = [
 
 export const coldBeverage = [
   {
-    title: "Ayran",
+    title: " Açık ayran",
     content: "",
     price: "₺150",
     image:
-      "https://www.umraniyeziyafet.com/images/urunler/Ayran--1lt--resim-52.jpg",
+      "https://harbiyiyorum.com/wp-content/uploads/acik-ayran-nerede-icilir-harbiyiyorum.jpg",
+  },
+  {
+    title: "Kapalı ayran",
+    content: "",
+    price: "₺150",
+    image:
+      "https://tostakademisi.com.tr/wp-content/uploads/2021/11/kapali-ayran.jpg",
   },
   {
     title: "Meyve Suyu",
@@ -328,7 +327,7 @@ export const coldBeverage = [
     content: "",
     price: "₺200",
     image:
-      "https://www.coca-cola.com/content/dam/onexp/tr/tr/brands/fanta/tr_fanta_prod_fanta-portakal_750x750.jpg",
+      "https://www.etgros.com/wp-content/uploads/2020/05/fbc0f4a2-2425-4cdf-9c71-8f3e55d19b7a_size780x780_quality60_cropCenter.jpg",
   },
   {
     title: "Sade Soda",

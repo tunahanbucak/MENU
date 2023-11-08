@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { breakfast } from "../utils/data";
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import PriceButton from "./common/PriceButton";
 import ShoppingButton from "./common/ShoppingButton";
@@ -15,7 +15,6 @@ interface CardItem {
   price: string;
   image: string;
 }
-
 export default function BreakfastMenu() {
   const [selectedItem, setSelectedItem] = useState<CardItem | null>(null);
   const handleCardClick = (item: CardItem) => {
@@ -24,7 +23,6 @@ export default function BreakfastMenu() {
   const handleCloseDetail = () => {
     setSelectedItem(null);
   };
-
   return (
     <Box>
       <Typography

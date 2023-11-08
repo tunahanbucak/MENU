@@ -7,7 +7,6 @@ import Logo from "./Logo";
 export default function Home() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-
   return (
     <Box sx={{ flexGrow: 1, display: "flex" }}>
       {isMobile ? (
