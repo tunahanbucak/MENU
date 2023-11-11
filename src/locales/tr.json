@@ -1,6 +1,7 @@
 {
-  "breakFast": {
-    "title": "Serpme Kahvaltı",
+  "breakfast": {
+    "title": "Kahvaltı",
+    "title1": "Serpme Kahvaltı",
     "content": "Söğüş tabağı, ev reçelleri, çikolatalı fındık Kreması, kaymak, petek bal, tereyağı, tahin - pekmez, zeytin çeşitleri, beyaz peynir, maraş peyniri, dil peyniri, eski kaşar peyniri, tulum peyniri, taze kaşar peyniri, hellim peyniri, vs benzer peynir türleri, şarküteri tabağı, kayseri pastırması, sahanda sucuk, sahanda kavurma, haşlanmış yumurta"
   }
 }

@@ -1,37 +1,27 @@
-import React, { useState, useRef, useContext } from "react";
-import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
-import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import React, { useState, useRef } from "react";
 import {
   Box,
   FormControl,
-  IconButton,
-  InputLabel,
   MenuItem,
   Select,
   SelectChangeEvent,
-  Theme,
   Typography,
-  useTheme,
 } from "@mui/material";
 import RestaurantIcon from "@mui/icons-material/Restaurant";
 import CartButton from "./CartButton";
 import MenuContainer from "./MenuContainer";
 import MenuTabs from "./MenuTabs";
-import i18n from "../i18n";
-
-const languages = [
-  { code: "en", label: "English", flag: "en" },
-  { code: "tr", label: "Türkçe", flag: "tr" },
-];
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
+  const languages = [
+    { code: "en", label: "English", flag: "en" },
+    { code: "tr", label: "Türkçe", flag: "tr" },
+  ];
+  const { i18n } = useTranslation();
   const handleLanguageChange = (event: SelectChangeEvent) => {
     const selectedLanguage = event.target.value as string;
     i18n.changeLanguage(selectedLanguage);
-  };
-  const [age, setAge] = React.useState("");
-  const handleChange = (event: SelectChangeEvent) => {
-    setAge(event.target.value as string);
   };
   const [value, setValue] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -77,26 +67,13 @@ export default function Header() {
         >
           İSTANBUL ÜMRANİYE
         </Typography>
-        <Typography
-          sx={{
-            color: "#add8e6",
-            mb: 1,
-            alignItems: "center",
-            fontSize: "16px",
-          }}
-        >
-          İstanbul Ümraniye Şube
-        </Typography>
-        <Typography sx={{ fontSize: "15px", color: "white" }}>
-          Eşsiz Lezzetler Dünyasına Hoş Geldiniz
-          <RestaurantIcon sx={{ ml: 1, fontSize: "20px" }} />
-        </Typography>
         <Box
           sx={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             gap: 5,
+            mb: 1.3,
           }}
         >
           <FormControl
@@ -123,6 +100,10 @@ export default function Header() {
           </FormControl>
           <CartButton itemCount={2} />
         </Box>
+        <Typography sx={{ fontSize: "15px", color: "white" }}>
+          Eşsiz Lezzetler Dünyasına Hoş Geldiniz
+          <RestaurantIcon sx={{ ml: 1, fontSize: "20px" }} />
+        </Typography>
       </Box>
       <MenuTabs
         value={value}

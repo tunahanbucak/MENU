@@ -8,6 +8,7 @@ import { Box } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import PriceButton from "./common/PriceButton";
 import ShoppingButton from "./common/ShoppingButton";
+import { useTranslation } from "react-i18next";
 
 interface CardItem {
   title: string;
@@ -16,6 +17,8 @@ interface CardItem {
   image: string;
 }
 export default function BreakfastMenu() {
+  const { t } = useTranslation();
+
   const [selectedItem, setSelectedItem] = useState<CardItem | null>(null);
   const handleCardClick = (item: CardItem) => {
     setSelectedItem(item);
@@ -35,7 +38,7 @@ export default function BreakfastMenu() {
           fontWeight: "bold",
         }}
       >
-        KAHVALTILAR{" "}
+        {t("breakfast.title")}
       </Typography>
       {breakfast.map((item, index) => (
         <Card

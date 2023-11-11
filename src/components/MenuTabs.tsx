@@ -69,7 +69,7 @@ export default function MenuTabs({
           sx={{
             color: "#add8e6",
           }}
-          label="Pide"
+          label="PİDE"
           icon={
             <img
               style={{
@@ -86,7 +86,7 @@ export default function MenuTabs({
           sx={{
             color: "#add8e6",
           }}
-          label="Pizza"
+          label="PİZZA"
           icon={
             <img
               style={{

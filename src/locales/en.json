@@ -1,6 +1,7 @@
 {
-  "breakFast": {
-    "title": "Mixed Breakfast",
+  "breakfast": {
+    "title": "Breakfast",
+    "title1": "Mixed Breakfast",
     "content": "Cold cuts, homemade jams, chocolate hazelnut cream, cream, honeycomb honey, butter, tahini - molasses, olive varieties, feta cheese, maraş cheese, string cheese, aged cheddar cheese, tulum cheese, fresh cheddar cheese, halloumi cheese, etc. cheese types, delicatessen plate, Kayseri pastrami, fried sausage, fried fried eggs, boiled eggs"
   }
 }
